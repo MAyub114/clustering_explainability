@@ -39,5 +39,12 @@ tree = Tree(k=k)
 tree.fit(X, kmeans)
 
 # Show decision tree
-tree.plot(filename="tree.png", feature_names=X.columns)
+tree.plot(filename="iris_imm", feature_names=X.columns)
 
+# ExKMC algorithm
+# Creates decision tree with more than k leaves
+tree = Tree(k=k, max_leaves=6)
+tree.fit(X, kmeans)
+
+# Show decision tree
+tree.plot(filename="iris_exkmc", feature_names=X.columns)
