@@ -6,3 +6,8 @@ Iterative Mistake Minimization (IMM) clustering is a tree-based clustering algor
 
 ## ExKMC Clustering
 ExKMC is an extension of IMM by growing the trees, such that the number of leaves exceeds the number of clusters (from K-means), to achieve better partitioning.
+
+## graphviz installation
+*  conda install -y graphviz
+*  conda install -y python-graphviz
+*  conda install -y pydot
